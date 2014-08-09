@@ -1,0 +1,201 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: #f9f9f9;
+	color: #646464;
+	font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a:link, a:active, a:visited {
+	color: #d2527f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+header {
+	background: #D2527F;
+	text-align: center;
+	color: #f9f9f9;
+	padding: 40px 0 30px 0;
+	text-transform: uppercase;
+}
+
+header h1 {
+	letter-spacing: 4px;
+	margin: 0;
+}
+
+header h2 {
+	font-size: 120%;
+	font-weight: normal;
+}
+
+.articles, .pagination, footer {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+article {
+	position: relative;
+	background: white;
+	padding: 20px 20px 40px 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #f1cad8;
+}
+
+article h2 {
+	text-align: center;
+}
+
+article.image {
+	text-align: center;
+}
+	article.image img {
+		max-height: 400px;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+
+article .attachment {
+	text-align: center;
+}
+
+article.aside span {
+	text-align: center;
+	font-size: 130%;
+}
+
+article.quote blockquote {
+	font-style: italic;
+}
+
+article.quote blockquote footer {
+	font-style: normal;
+}
+
+article .date {
+	background: #d2527f;
+	margin-left: -21px;
+	max-width: 40px;
+	margin-bottom: 20px;
+	padding: 5px 5px 5px 10px;
+	color: #f9f9f9;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-align: left;
+}
+
+	article .date a {
+		color: #f9f9f9;
+	}
+
+	article .date a:hover {
+		color: #000;
+	}
+
+article .permalink {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	font-size: 80%;
+}
+
+	article .permalink a {
+		color: grey;
+	}
+
+	article .permalink a:hover {
+		text-decoration: underline;
+	}
+
+footer.site {
+	padding: 20px;
+	font-size: small;
+	text-align: center;
+}
+
+/**
+ * Responsive Gallery
+ */
+
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -50px; /* should match li left margin */
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+ 
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
