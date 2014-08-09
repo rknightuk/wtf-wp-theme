@@ -128,6 +128,12 @@ article .permalink {
 		text-decoration: underline;
 	}
 
+.pagination {
+	padding: 10px;
+	min-height: 46px;
+	border-top: 1px solid #f1cad8;
+	border-bottom: 1px solid #f1cad8;
+}
 footer.site {
 	padding: 20px;
 	font-size: small;
