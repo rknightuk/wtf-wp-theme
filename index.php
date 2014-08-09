@@ -13,14 +13,18 @@
 		endwhile;
 	endif;
 
-	echo '<div class="pagination">';
 	$prev = get_previous_posts_link();
-	echo $prev;
-
 	$next = get_next_posts_link();
-	echo '<span style="float:right">'.$next.'</span>';
 
-	echo '</div>';
+	if ($prev || $next)
+	{
+		echo '<div class="pagination">';
+		echo $prev;
+
+		echo '<span style="float:right">'.$next.'</span>';
+
+		echo '</div>';
+	}
 
 	get_footer();
 
