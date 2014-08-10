@@ -1,6 +1,6 @@
 <article class="link">
 	<div class="date">
-		<a href="http://wp.dev/?post_format=link">
+		<a href="<?php echo get_post_format_link('link'); ?>">
 			<i class="fa fa-link"></i></div>
 		</a>
 	<h2>

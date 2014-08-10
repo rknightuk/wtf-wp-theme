@@ -1,6 +1,6 @@
 <article class="video">
 	<div class="date">
-		<a href="http://wp.dev/?post_format=video">
+		<a href="<?php echo get_post_format_link('video'); ?>">
 			<i class="fa fa-film"></i>
 		</a>
 	</div>

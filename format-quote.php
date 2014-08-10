@@ -1,6 +1,6 @@
 <article class="quote">
 	<div class="date">
-		<a href="http://wp.dev/?post_format=quote">
+		<a href="<?php echo get_post_format_link('quote'); ?>">
 			<i class="fa fa-quote-left"></i></div>
 		</a>
 	<blockquote>

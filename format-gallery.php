@@ -1,6 +1,6 @@
 <article class="image">
 	<div class="date">
-		<a href="http://wp.dev/?post_format=gallery">
+		<a href="<?php echo get_post_format_link('gallery'); ?>">
 			<i class="fa fa-picture-o"></i>
 		</a>
 	</div>

@@ -5,8 +5,6 @@
 				robb.wtf by <a href="http://robblewis.me">Robb Lewis</a> | 
 				WTF Theme: <a href="http://github.com/rmlewisuk/wtf-wp-theme">Fork on Github</a>
 			</p>
-
-			<?php echo get_post_format_link('image'); ?>
 		</footer>
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
